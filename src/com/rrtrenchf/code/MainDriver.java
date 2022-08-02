@@ -5,8 +5,10 @@ import java.util.Scanner;
 
 public class MainDriver {
 
+
 	public MainDriver() {
 		// TODO Auto-generated constructor stub
+	
 	}
 
 	public static void main(String[] args) {
@@ -15,6 +17,8 @@ Scanner scan = new Scanner(System.in);
 System.out.println("Name your thermometer");
 
 	String name = scan.nextLine();
+	
+	
 	System.out.println("Your thermometer is called "+ name);
 	
 	System.out.println("Enter degrees in farenheight");
@@ -33,8 +37,14 @@ System.out.println("Name your thermometer");
           
           System.out.println("You entered " + tempReadings[i]);
        }
+	  System.out.println("No more values allowed");
+	  
+	  
+	
 	
 	
 	}
+	
+	
 
 }

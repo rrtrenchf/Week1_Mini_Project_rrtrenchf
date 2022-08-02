@@ -4,8 +4,8 @@ package com.rrtrenchf.code;
 public class thermometer {
 
 	
-		private int degreesF;
-		private int degreesC;
+		private static int degreesF;
+		private static int degreesC;
 		private String name;
 		
 		private int getDegreesF() {
@@ -58,8 +58,11 @@ public class thermometer {
 
 		private int [] tempReadings = new int [3];
 		
-		public static int convertToFahrenheit(int c) {
-			return;  
+		public static double convertToFahrenheit(double c) {
+			  c = (degreesC*1.8)+32;
+			System.out.println(c);
+			return  c;  
+			
 			
 		}
 		public static int convertToCelsius(int f) {
@@ -74,4 +77,5 @@ public class thermometer {
 
 
 }
+
 
